@@ -128,7 +128,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias off='shutdown -h now'
 alias out='gnome-session-quit --no-prompt'
 alias rbt='shutdown -r now'
-alias upd='sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get autoremove -y'
+alias upd='sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get autoremove -y && sudo snap refresh'
 alias usr='cut -d ':' -f 1,3,4 /etc/passwd | sort -t ':' -k 2 -n'
 alias grp='cut -d ':' -f 1,3,4 /etc/group | sort -t ':' -k 2 -n'
 alias job='jobs -l'
@@ -155,6 +155,7 @@ alias ntl='nautilus &'
 alias syn='sudo synaptic &'
 alias bsx='basexgui &'
 alias edg='microsoft-edge &'
+alias scn="/opt/scenebuilder/bin/SceneBuilder &"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
