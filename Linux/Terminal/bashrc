@@ -155,7 +155,9 @@ alias ntl='nautilus &'
 alias syn='sudo synaptic &'
 alias bsx='basexgui &'
 alias edg='microsoft-edge &'
-alias scn="/opt/scenebuilder/bin/SceneBuilder &"
+alias scn='/opt/scenebuilder/bin/SceneBuilder &'
+alias ghc='/opt/Ghidra/ghidra_10.3_PUBLIC/ghidraRun'
+alias ntb='/opt/netbeans/bin/netbeans &'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
