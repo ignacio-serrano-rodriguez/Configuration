@@ -3,9 +3,9 @@ AYUDA
     git help “obtener información de Git y sus comandos”
 
 CONFIGURACION
-    git config - -global user.name “modificar nombre para historial de cambios”
-    git config - -global user.email “modificar email para historial de cambios”
-    git config - -list “ver los ajustes de Git para tu usuario del host”
+    git config --global user.name "Ignacio Serrano Rodríguez"
+    git config --global user.email "ignacioserranorodriguez@gmail.com"
+    git config --list “ver los ajustes de Git para tu usuario del host”
 
 ALIAS
 
