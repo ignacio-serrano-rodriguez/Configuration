@@ -1,0 +1,24 @@
+⬜ BLANCO 
+rgb(255, 255, 255)
+#ffffff
+⬛ NEGRO 
+rgb(0, 0, 0)
+#000000
+🟨 AMARILLO 
+rgba(255, 245, 0)
+🟧 NARANJA 
+rgba(255, 107, 0)
+⬛⬜ GRIS 
+rgba(110, 110, 110)
+🟥 ROJO 
+rgba(255, 0, 0)
+🟩 VERDE 
+rgba(0, 255, 1)
+🟦⬜ CELESTE 
+rgba(0, 189, 255)
+🟦 AZUL 
+rgba(0, 82, 255)
+🟪 MORADO
+rgba(141, 0, 255)
+🟪⬜ ROSA 
+rgba(255, 0, 230)
