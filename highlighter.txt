@@ -1,9 +1,3 @@
-⬜ BLANCO 
-rgb(255, 255, 255)
-#ffffff
-⬛ NEGRO 
-rgb(0, 0, 0)
-#000000
 🟨 AMARILLO 
 rgba(255, 245, 0, 0.3)
 #fff5004d
