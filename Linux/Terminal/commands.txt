@@ -1,6 +1,0 @@
-INSTALAR GUEST ADDITIONS
-1. 
-sudo apt install build-essential dkms linux-headers-$(uname -r)
-2.
-insertar guest additions iso
-ejecutar el .run con sudo

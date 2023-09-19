@@ -120,44 +120,20 @@ alias la='ls -A'
 alias l='ls -CF'
 alias lh='ls -lh'
 
-    # Add an "alert" alias for long running commands.  Use like so:
+# Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # --- MY ALIASES ---
 # SYSTEM
-alias off='shutdown -h now'
-alias out='gnome-session-quit --no-prompt'
-alias rbt='shutdown -r now'
-alias upd='sudo apt update -y && sudo apt upgrade -y && sudo apt autoclean -y && sudo apt clean -y && sudo apt autoremove -y && sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get autoclean -y &&  sudo apt-get clean -y && sudo apt-get autoremove -y && sudo snap refresh && apt list --upgradable && sudo snap refresh --list'
-alias job='jobs -l'
+alias upd='sudo apt update -y && sudo apt upgrade -y && sudo apt autoclean -y && sudo apt clean && sudo apt autoremove -y && sudo flatpak update && apt list --upgradable'
 alias neo='neofetch'
 alias tre='tree'
 alias cls='clear'
 alias fre='free -h'
 alias lon='sudo rogauracore multi_static ff0000 ff0000 ff0000 ff0000'
 alias lof='sudo rogauracore single_static 000000'
-alias godot='/opt/godot/Godot_v4.0.3-stable_linux.x86_64'
-# LAUNCH JOBS
-alias st1='gnome-control-center &'
-alias st2='software-properties-gtk &'
-alias st3='gnome-tweaks &'                                                                                                                      
-alias spt='spotify &'
-alias dsc='discord &'
-alias clc='gnome-calculator &'
-alias fox='firefox &'
-alias chr='google-chrome &'
-alias box='virtualbox &'
-alias snp='snap-store'
-alias clk='gnome-clocks &'
-alias cha='gnome-characters &'
-alias syn='sudo synaptic &'
-alias edg='microsoft-edge &'
-alias trs='nautilus trash:// &'
-alias snd='gnome-sound-recorder &'
-alias wsp='whatsdesk &'
-alias ntl='nautilus &'
-alias skp='skypeforlinux &'
+alias gln='glances'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
