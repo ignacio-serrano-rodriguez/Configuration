@@ -126,7 +126,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # --- MY ALIASES ---
 # SYSTEM
-alias upd='sudo apt update -y && sudo apt upgrade -y && sudo apt autoclean -y && sudo apt clean && sudo apt autoremove -y && sudo flatpak update && apt list --upgradable'
+alias upd='sudo apt update -y && sudo apt upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y && sudo flatpak update -y && flatpak uninstall --unused -y && apt list --upgradable'
 alias neo='neofetch'
 alias tre='tree'
 alias cls='clear'
