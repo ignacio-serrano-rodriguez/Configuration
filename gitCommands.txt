@@ -31,7 +31,7 @@ CREACION REPOSITORIO
     git init “crea el directorio .git,  generando un repositorio en Git” 
 
 CONECTAR REPOSITORIO LOCAL Y REMOTO (GitHub)
-    git remote add (origin) “conecta un repositorio local con uno remoto”
+    git remote add origin (url) “conecta un repositorio local con uno remoto”
     git remote -v “enumera las conexiones remotas de un repositorio local”
 
 SUBIR MODIFCACIONES DESDE LOCAL A REMOTO
