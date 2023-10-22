@@ -14,7 +14,10 @@ ALIAS
         git config --global alias.ac '!f() { git add -A && git commit -m "$@"; }; f' -> "add y commit"
             USO: git ac "mensaje del commit"
 
-        git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push origin master; }; f' -> "add, commit y push"
+        git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push; }; f' -> "add, commit y push cuando sudo"
+                    USO: git acp "mensaje del commit"
+
+        git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push origin master; }; f' -> "add, commit y push sin sudo"
             USO: git acp "mensaje del commit"
 
     BORRAR ALIAS
