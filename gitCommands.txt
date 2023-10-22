@@ -28,7 +28,7 @@ COMPROBAR REPOSITORIO
     git log “muestra las confirmaciones (commits) del repositorio”
 
 CREACION REPOSITORIO    
-    git init “crea el directorio .git,  generando un repositorio en Git” 
+    git init “crea el directorio .git, generando un repositorio en Git” 
 
 CONECTAR REPOSITORIO LOCAL Y REMOTO (GitHub)
     git remote add origin (url) “conecta un repositorio local con uno remoto”
@@ -38,7 +38,7 @@ SUBIR MODIFCACIONES DESDE LOCAL A REMOTO
     1. git add-commit -m “add y commit en un solo comando mediante alias”
         1.1 git add “añade un archivo del directorio de trabajo al área de preparación”
         1.2 git commit -m “confirma el área de preparación del repositorio local añadiendo mensaje”
-    2. git push “actualiza el repositorio remoto con los cambios del repositorio local”
+    2. git push origin master “actualiza el repositorio remoto con los cambios del repositorio local”
 
 DESHACER MODIFICACIONES
     git restore --staged (archivo) “quita un archivo de la zona de preparación/staged”
