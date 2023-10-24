@@ -15,10 +15,13 @@ ALIAS
             USO: git ac "mensaje del commit"
 
         git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push; }; f' -> "add, commit y push sin sudo"
-                    USO: git acp "mensaje del commit"
+            USO: git acp "mensaje del commit"
 
         git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push origin master; }; f' -> "add, commit y push con sudo"
             USO: git acp "mensaje del commit"
+
+        git config --global alias.fp '!f() { git fetch && git pull; }; f' -> "fetch y pull"
+            USO: git fp
 
     BORRAR ALIAS
         git config --global --unset alias.(nombre alias)
