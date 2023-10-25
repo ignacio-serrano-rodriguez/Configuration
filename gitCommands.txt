@@ -14,16 +14,16 @@ ALIAS
         git config --global alias.ac '!f() { git add -A && git commit -m "$@"; }; f' -> "add y commit"
             USO: git ac "mensaje del commit"
 
-        git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push; }; f' -> "add, commit y push sin sudo"
+        git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push; }; f' -> "add, commit y push"
             USO: git acp "mensaje del commit"
 
-        git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push origin master; }; f' -> "add, commit y push con sudo"
+        sudo git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push origin master; }; f' -> "add, commit y push con sudo"
             USO: git acp "mensaje del commit"
 
-        git config --global alias.fp '!f() { git fetch && git pull; }; f' -> "fetch y pull sin sudo"
+        git config --global alias.fp '!f() { git fetch && git pull; }; f' -> "fetch y pull"
             USO: git fp
         
-        git config --global alias.fp '!f() { git fetch && git pull origin master; }; f' -> "fetch y pull con sudo"
+        sudo git config --global alias.fp '!f() { git fetch && git pull origin master; }; f' -> "fetch y pull con sudo"
             USO: git fp
 
     BORRAR ALIAS
