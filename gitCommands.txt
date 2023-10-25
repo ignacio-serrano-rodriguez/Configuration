@@ -7,6 +7,37 @@ CONFIGURACION
     git config --global user.email "ignacioserranorodriguez@gmail.com"
     git config --list “ver los ajustes de Git para tu usuario del host”
 
+CLONAR REPOSITORIO
+    git clone (url) “importa un repositorio en la nube a local”
+
+COMPROBAR REPOSITORIO
+    git status “muestra el estado de los archivos del repositorio”
+    git log “muestra las confirmaciones (commits) del repositorio”
+
+CREACION REPOSITORIO    
+    git init “crea el directorio .git, generando un repositorio en Git” 
+
+CONECTAR REPOSITORIO LOCAL Y REMOTO (GitHub)
+    git remote add origin (url) “conecta un repositorio local con uno remoto”
+    git remote -v “indica con que repositorios remotos está conectado el repositorio local”
+
+SUBIR MODIFCACIONES DESDE LOCAL A REMOTO
+    1 git add “añade un archivo del directorio de trabajo al área de preparación”
+    2. git commit -m “confirma el área de preparación del repositorio local añadiendo mensaje”
+    3. git push origin master “actualiza el repositorio remoto con los cambios del repositorio local”
+
+DESHACER MODIFICACIONES
+    git restore (archivo) "deshace las modificaciones del fichero en el directorio de trabajo"
+    git restore --staged (archivo) “quita un archivo de la zona de preparación/staged”
+    git reset “quita todos los archivos del área de preparación/staged”
+    git reset HEAD^ “deshace el último commit. Deja el directorio igual”
+    git reset --hard HEAD^ “deshace el último commit y vuelca el anterior en el directorio”
+    git commit --amend “modifica el mensaje del último commit”
+
+ACTUALIZAR REPOSITORIO LOCAL DEL REMOTO
+    git fetch "actualiza los cambios realizados"
+    git pull origin master "vierte los cambios realizados en el directorio de trabajo actual"
+
 ALIAS
 
     CREAR ALIAS
@@ -28,34 +59,3 @@ ALIAS
 
     BORRAR ALIAS
         git config --global --unset alias.(nombre alias)
-
-CLONAR REPOSITORIO
-    git clone (url) “importa un repositorio en la nube a local”
-
-COMPROBAR REPOSITORIO
-    git status “muestra el estado de los archivos del repositorio”
-    git log “muestra las confirmaciones (commits) del repositorio”
-
-CREACION REPOSITORIO    
-    git init “crea el directorio .git, generando un repositorio en Git” 
-
-CONECTAR REPOSITORIO LOCAL Y REMOTO (GitHub)
-    git remote add origin (url) “conecta un repositorio local con uno remoto”
-    git remote -v “enumera las conexiones remotas de un repositorio local”
-
-SUBIR MODIFCACIONES DESDE LOCAL A REMOTO
-    1. git add-commit -m “add y commit en un solo comando mediante alias”
-        1.1 git add “añade un archivo del directorio de trabajo al área de preparación”
-        1.2 git commit -m “confirma el área de preparación del repositorio local añadiendo mensaje”
-    2. git push origin master “actualiza el repositorio remoto con los cambios del repositorio local”
-
-DESHACER MODIFICACIONES
-    git restore --staged (archivo) “quita un archivo de la zona de preparación/staged”
-    git reset “quita todos los archivos del área de preparación/staged”
-    git reset HEAD^ “deshace el último commit. Deja el directorio igual”
-    git reset --hard HEAD^ “deshace el último commit y vuelca el anterior en el directorio”
-    git commit --amend “modifica el mensaje del último commit”
-
-ACTUALIZAR REPOSITORIO LOCAL DEL REMOTO
-    git fetch
-    git pull
