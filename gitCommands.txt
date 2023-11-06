@@ -3,7 +3,7 @@ AYUDA
     git help “obtener información de Git y sus comandos”
 
 CONFIGURACION
-    git config --global user.name "Ignacio Serrano Rodríguez"
+    git config --global user.name "Ignacio Serrano Rodriguez"
     git config --global user.email "ignacioserranorodriguez@gmail.com"
     git config --list “ver los ajustes de Git para tu usuario del host”
 
