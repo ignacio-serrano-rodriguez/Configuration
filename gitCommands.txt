@@ -46,9 +46,11 @@ ALIAS
             USO: git ac "mensaje del commit"
 
         git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push; }; f' -> "add, commit y push"
+        git config --global alias.acp 'f() { git add -A && git commit -m "$@" && git push origin master; }; f' -> "add, commit y push con sudo"
             USO: git acp "mensaje del commit"
         
         git config --global alias.fp '!f() { git fetch && git pull; }; f' -> "fetch y pull"
+        git config --global alias.fp '!f() { git fetch && git pull origin master; }; f' -> "fetch y pull con sudo"
             USO: git fp
 
     BORRAR ALIAS
