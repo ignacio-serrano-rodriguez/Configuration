@@ -115,7 +115,7 @@ fi
 
 # COLORS
 #BLACK=$(tput setaf 0)
-RED=$(tput setaf 1)
+#RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
 #LIME_YELLOW=$(tput setaf 190)
 YELLOW=$(tput setaf 3)
@@ -133,4 +133,4 @@ NORMAL=$(tput sgr0)
 #UNDERLINE=$(tput smul)
 
 # MY MODIFIED PROMPT
-PS1="\[${BRIGHT}\]\[${GREEN}\]\u\[${NORMAL}\]\[${YELLOW}\]|\[${BRIGHT}\]\[${CYAN}\]\H\[${NORMAL}\]\[${YELLOW}\]|\[${BRIGHT}\]\[${BLUE}\]\w\[${NORMAL}\]\[${YELLOW}\]|\[${BRIGHT}\]\[${RED}\]\$\[${NORMAL}\]\[${YELLOW}\]|> \[${WHITE}\]"
+PS1="\[${BRIGHT}\]\[${GREEN}\]\u \[${BRIGHT}\]\[${CYAN}\]\H \[${BRIGHT}\]\[${BLUE}\]\w\[${NORMAL}\] \[${YELLOW}\]"
