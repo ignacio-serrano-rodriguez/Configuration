@@ -1,27 +1,18 @@
 🟨 AMARILLO 
 rgba(255, 245, 0, 0.3)
-#fff5004d
 🟧 NARANJA 
 rgba(255, 107, 0, 0.3)
-#ff6b004d
 ⬛⬜ GRIS 
 rgba(110, 110, 110, 0.3)
-#6e6e6e4d
 🟥 ROJO 
 rgba(255, 0, 0, 0.3)
-#ff00004d
 🟩 VERDE 
 rgba(0, 255, 1, 0.3)
-#00ff014d
 🟦⬜ CELESTE 
 rgba(0, 189, 255, 0.3)
-#00bdff4d
 🟦 AZUL 
 rgba(0, 82, 255, 0.3)
-#0052ff4d
 🟪 MORADO
 rgba(141, 0, 255, 0.3)
-#8d00ff4d
 🟪⬜ ROSA 
 rgba(255, 0, 230, 0.3)
-#ff00e64d
