@@ -1,3 +1,9 @@
+# fedora based update
+alias upd='sudo dnf upgrade --refresh -y && sudo dnf autoremove -y' 
+# debian based update
+# alias upd='sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y' 
+
+# generic alias
 alias c='clear'
 alias l='ls -lart'
 alias network='ip -c a'
