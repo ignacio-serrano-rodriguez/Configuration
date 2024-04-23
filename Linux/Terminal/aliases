@@ -1,7 +1,9 @@
-# fedora based update
-alias upd='sudo dnf upgrade --refresh -y && sudo dnf autoremove -y' 
-# debian based update
-# alias upd='sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y' 
+# fedora based update (rpm packages)
+alias rpm_upd='sudo dnf upgrade --refresh -y && sudo dnf autoremove -y' 
+# debian based update (deb packages)
+# alias deb_upd='sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y' 
+# flatpak update
+alias flatpak_upd='sudo flatpak update -y && sudo flatpak uninstall --unused'
 
 # generic alias
 alias c='clear'
