@@ -5,7 +5,7 @@ alias rpm_upd='sudo dnf upgrade --refresh -y && sudo dnf autoremove -y'
 # flatpak update
 alias flatpak_upd='sudo flatpak update -y && sudo flatpak uninstall --unused'
 # update system
-alias upd='sudo dnf upgrade --refresh -y && sudo dnf autoremove -y && sudo flatpak update -y && sudo flatpak uninstall --unused'
+alias upd='sudo dnf upgrade --refresh -y && sudo dnf autoremove -y && sudo flatpak update -y && sudo flatpak uninstall --unused -y'
 
 # generic alias
 alias c='clear'
