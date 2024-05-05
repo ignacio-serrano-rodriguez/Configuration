@@ -2,16 +2,16 @@
 # alias deb_upd='sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y' 
 
 # fedora based update (rpm packages)
-alias rpm_upd='sudo dnf upgrade --refresh -y && sudo dnf autoremove -y' 
+alias rpm_upd='echo -e "\n-- RPM --" && sudo dnf upgrade --refresh -y && sudo dnf autoremove -y' 
 
 # flatpak update
-alias flatpak_upd='sudo flatpak update -y && sudo flatpak uninstall --unused -y'
+alias flatpak_upd='echo -e "\n-- FLATPAK --" && sudo flatpak update -y && sudo flatpak uninstall --unused -y'
 
 # snap update
-alias snap_upd='sudo snap refresh'
+alias snap_upd='echo -e "\n-- SNAP --" && sudo snap refresh'
 
 # update system
-alias upd='sudo dnf upgrade --refresh -y && sudo dnf autoremove -y && sudo flatpak update -y && sudo flatpak uninstall --unused -y && sudo snap refresh'
+alias upd='rpm_upd && flatpak_upd && snap_upd'
 
 # generic alias
 alias c='clear'
