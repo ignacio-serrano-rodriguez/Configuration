@@ -11,7 +11,7 @@ alias flatpak_upd='echo "-- FLATPAK --" && sudo flatpak update -y && sudo flatpa
 alias snap_upd='echo "-- SNAP --" && sudo snap refresh && echo -e "\n"'
 
 # update system
-alias upd='echo -e "-- PACKAGES UPDATING STARTED --\n" && rpm_upd && echo -e "" && flatpak_upd && echo -e "\n-- PACKAGES UPDATING FINISHED --\n"'
+alias upd='echo -e "-- PACKAGES UPDATING STARTED --\n" && sudo echo ""; rpm_upd && echo -e "" && flatpak_upd && echo -e "\n-- PACKAGES UPDATING FINISHED --\n"'
 
 # generic alias
 alias c='clear'
