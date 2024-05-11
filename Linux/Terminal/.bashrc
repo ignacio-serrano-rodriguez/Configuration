@@ -29,12 +29,12 @@ unset rc
 #RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
 #LIME_YELLOW=$(tput setaf 190)
-YELLOW=$(tput setaf 3)
+#YELLOW=$(tput setaf 3)
 #POWDER_BLUE=$(tput setaf 153)
 BLUE=$(tput setaf 4)
 #MAGENTA=$(tput setaf 5)
 CYAN=$(tput setaf 6)
-WHITE=$(tput setaf 7)
+#WHITE=$(tput setaf 7)
 
 # Modifiers
 BRIGHT=$(tput bold)
