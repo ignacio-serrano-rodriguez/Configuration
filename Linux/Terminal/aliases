@@ -31,3 +31,4 @@ alias my_open_ports='sudo lsof -i -P -n | grep LISTEN && sudo netstat -tulpn | g
 alias d='docker'
 alias d_stop='systemctl --user stop docker-desktop'
 alias d_start='systemctl --user start docker-desktop'
+alias display_server='echo $XDG_SESSION_TYPE'
