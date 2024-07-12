@@ -8,10 +8,10 @@ alias rpm_upd='echo "-- RPM --" && sudo dnf upgrade --refresh -y && sudo dnf aut
 alias flatpak_upd='echo "-- FLATPAK --" && sudo flatpak update -y && sudo flatpak uninstall --unused -y'
 
 # snap update
-alias snap_upd='echo "-- SNAP --" && sudo snap refresh && echo -e "\n"'
+alias snap_upd='echo "-- SNAP --" && sudo snap refresh'
 
 # update system
-alias upd='echo -e "-- PACKAGES UPDATING STARTED --\n" && sudo echo ""; rpm_upd && echo -e "" && flatpak_upd && echo -e "\n-- PACKAGES UPDATING FINISHED --\n"'
+alias upd='echo -e "\n-- PACKAGES UPDATING STARTED --\n" && sudo echo ""; rpm_upd && echo -e "" && flatpak_upd && echo -e "" && snap_upd && echo -e "\n-- PACKAGES UPDATING FINISHED --\n"'
 
 # generic alias
 alias c='clear'

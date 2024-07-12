@@ -45,3 +45,8 @@ NORMAL=$(tput sgr0)
 
 # Custom prompt
 PS1="\[${BRIGHT}\]\[${GREEN}\]\u \[${BRIGHT}\]\[${CYAN}\]\H \[${BRIGHT}\]\[${BLUE}\]\w\[${NORMAL}\] "
+
+# Exports
+export SC2PF=WineLinux
+export WINE=/home/ignacio/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine64
+export SC2PATH='/home/ignacio/Games/battlenet/drive_c/Program Files (x86)/Starcraft II/'
