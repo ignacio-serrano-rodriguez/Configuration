@@ -90,6 +90,30 @@ info() {
     # Script que combina varios comandos para información completa
     echo -e "\033[1;35m=== DISTRIBUCIÓN Y KERNEL ===\033[0m" && \
     echo -e "\033[1;32mDistribución:\033[0m" && lsb_release -d 2>/dev/null || grep PRETTY_NAME /etc/os-release | cut -d= -f2 | tr -d "\"" && \
+    echo -e "\033[1;32mUbuntu Release:\033[0m" && lsb_release -r 2>/dev/null | cut -f2 && \
+    echo -e "\033[1;32mCodename:\033[0m" && lsb_release -c 2>/dev/null | cut -f2 && \
+    echo -e "\033[1;32mDebian Base:\033[0m" && \
+    ubuntu_version=$(lsb_release -r 2>/dev/null | cut -f2) && \
+    case "$ubuntu_version" in \
+        "24.04") echo "Debian 12 (Bookworm)" ;; \
+        "23.10") echo "Debian 12 (Bookworm)" ;; \
+        "23.04") echo "Debian 12 (Bookworm)" ;; \
+        "22.10") echo "Debian 11 (Bullseye)" ;; \
+        "22.04") echo "Debian 11 (Bullseye)" ;; \
+        "21.10") echo "Debian 11 (Bullseye)" ;; \
+        "21.04") echo "Debian 11 (Bullseye)" ;; \
+        "20.10") echo "Debian 10 (Buster)" ;; \
+        "20.04") echo "Debian 10 (Buster)" ;; \
+        "19.10") echo "Debian 10 (Buster)" ;; \
+        "19.04") echo "Debian 10 (Buster)" ;; \
+        "18.10") echo "Debian 9 (Stretch)" ;; \
+        "18.04") echo "Debian 9 (Stretch)" ;; \
+        "17.10") echo "Debian 9 (Stretch)" ;; \
+        "17.04") echo "Debian 9 (Stretch)" ;; \
+        "16.10") echo "Debian 8 (Jessie)" ;; \
+        "16.04") echo "Debian 8 (Jessie)" ;; \
+        *) echo "Desconocido para Ubuntu $ubuntu_version" ;; \
+    esac && \
     echo -e "\033[1;32mKernel:\033[0m" && uname -r && \
     echo -e "\033[1;32mArquitectura:\033[0m" && uname -m && \
     echo -e "\033[1;32mUptime:\033[0m" && uptime -p 2>/dev/null || uptime && echo && \
