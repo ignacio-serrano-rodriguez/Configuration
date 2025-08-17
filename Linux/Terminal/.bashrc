@@ -191,6 +191,31 @@ info() {
     echo -e "\033[1;34m=== USB ===\033[0m" && lsusb --color=always 2>/dev/null || lsusb
 }
 
+set_battery_limit() {
+  local limit=$1
+  if [[ -z "$limit" ]]; then
+    echo "Uso: set_battery_limit <porcentaje>"
+    return 1
+  fi
+  if ((limit < 50 || limit > 100)); then
+    echo "Por favor, ingresa un valor entre 50 y 100."
+    return 1
+  fi
+  echo "$limit" | sudo tee /sys/class/power_supply/BAT0/charge_control_end_threshold
+}
+
+# Función para mostrar el límite actual de carga de la batería
+get_battery_limit() {
+  local file="/sys/class/power_supply/BAT0/charge_control_end_threshold"
+  if [[ -f "$file" ]]; then
+    local limit
+    limit=$(cat "$file")
+    echo "El límite de carga de la batería está fijado en: $limit%"
+  else
+    echo "No se encontró el archivo de límite de carga. Tu hardware podría no soportarlo."
+  fi
+}
+
 # -- ROOT --
 
 # Colors - Expandida con más colores para root
